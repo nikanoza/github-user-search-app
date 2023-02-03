@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --electric: #0079ff;
+  --gray: #697c9a;
+  --darkSky: #4b6a9b;
+  --darkBlue: #2b3442;
+  --lightBg: #f6f8ff;
+  --light: #fefefe;
+  --white: #ffffff;
+  --dark: #141d2f;
+  --semiDark: #1e2a47;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
@@ -14,6 +26,7 @@ body {
   align-items: center;
   font-family: "Space Mono", monospace;
   padding: 0 24px;
+  background-color: #f6f8ff;
 }
 
 .header {
@@ -28,6 +41,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 38.51px;
+  color: #222731;
+}
+
+.title.dark {
+  color: var(--white);
 }
 
 .theme-text {
@@ -36,4 +54,19 @@ body {
   line-height: 19.25px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  color: var(--darkSky);
+}
+
+.theme-text.dark {
+  color: var(--white);
+}
+
+.theme-panel {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+#sun {
+  display: none;
 }
